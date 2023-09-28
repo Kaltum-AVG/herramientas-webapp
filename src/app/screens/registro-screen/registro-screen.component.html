@@ -69,13 +69,13 @@
 
                 <mat-form-field class="mat-input" appearance="outline">
                     <mat-label>Edad</mat-label>
-                    <input matInput [(ngModel)]="user.edad" mask='00' placeholder="Escribe edad">
+                    <input matInput [(ngModel)]="user.edad" placeholder="Escribe edad">
                 </mat-form-field>
                 <div *ngIf="errors.edad" class="invalid-feedback">{{ errors.edad }}</div>
 
                 <mat-form-field class="mat-input" appearance="outline">
                     <mat-label>Telefono</mat-label>
-                    <input matInput [(ngModel)]="user.telefono" mask='(000) 000-0000' placeholder="Escribe teléfono">
+                    <input matInput [(ngModel)]="user.telefono"  placeholder="Escribe teléfono">
                 </mat-form-field>
                 <div *ngIf="errors.telefono" class="invalid-feedback">{{ errors.telefono }}</div>
 

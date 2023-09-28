@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { UsuariosService } from 'src/app/services/usuarios.service';
+import { Router } from '@angular/router';
 declare var $:any;
 
 @Component({
@@ -24,6 +25,7 @@ export class RegistroScreenComponent implements OnInit {
 
   constructor(
     private location: Location,
+    private router: Router,
     private usuariosService: UsuariosService
   ) { }
 
