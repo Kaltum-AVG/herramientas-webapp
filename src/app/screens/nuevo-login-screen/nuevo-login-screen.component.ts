@@ -21,6 +21,8 @@ constructor(
 ngOnInit(): void {
 }
 
+//Aquí van las funciones de validación
+
 public login(){
   if(this.username == ""){
     this.errors.username = "Campo requerido";
