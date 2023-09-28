@@ -15,6 +15,9 @@ import {MatButtonModule} from '@angular/material/button';
 import { NuevoLoginScreenComponent } from './screens/nuevo-login-screen/nuevo-login-screen.component'
 import {MatIconModule} from '@angular/material/icon';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+//Cambia el idioma a español
+import { MAT_DATE_LOCALE } from '@angular/material/core';
 
 
 @NgModule({
@@ -33,9 +36,12 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatButtonModule,
     MatIconModule,
     FormsModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DATE_LOCALE, useValue: 'es-ES'},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
